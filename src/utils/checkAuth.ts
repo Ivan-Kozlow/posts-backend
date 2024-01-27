@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 import { NextFunction, Response } from 'express'
 
-import { RequestWithUserId } from '../types'
+import { RequestWithUserId } from '../../types'
 
 export default (req: RequestWithUserId, res: Response, next: NextFunction) => {
 	console.log(req.headers)

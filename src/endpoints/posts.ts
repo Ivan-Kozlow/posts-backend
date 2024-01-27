@@ -2,8 +2,8 @@ import { Express } from 'express'
 
 import checkAuth from '../utils/checkAuth'
 
-import { postCreateValidation } from '../validations'
 import { PostController } from '../controllers'
+import { postCreateValidation } from '../../validations'
 
 export function PostsEndpoints(app: Express) {
 	app.get('/posts', PostController.getAll)

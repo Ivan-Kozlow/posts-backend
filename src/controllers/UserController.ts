@@ -4,7 +4,7 @@ import { Request, Response } from 'express'
 
 import bcrypt from 'bcrypt'
 import UserModel from '../models/User'
-import { RequestWithUserId } from '../types'
+import { RequestWithUserId } from '../../types'
 
 export const login = async (req: Request, res: Response) => {
 	try {

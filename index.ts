@@ -2,13 +2,13 @@ import mongoose from 'mongoose'
 import express from 'express'
 import cors from 'cors'
 
-import checkAuth from './utils/checkAuth'
+import checkAuth from './src/utils/checkAuth'
 import { PORT } from './consts'
 
-import { UserEndpoints } from './endpoints/user'
-import { TagsEndpoints } from './endpoints/tags'
-import { PostsEndpoints } from './endpoints/posts'
-import { upload } from './controllers/filesController'
+import { UserEndpoints } from './src/endpoints/user'
+import { TagsEndpoints } from './src/endpoints/tags'
+import { PostsEndpoints } from './src/endpoints/posts'
+import { upload } from './src/controllers/filesController'
 
 mongoose
 	.connect('mongodb+srv://admin:rootroot@cluster0.rzrkjlg.mongodb.net/blog?retryWrites=true&w=majority') // process.env.DB_CONNECTED_URL!

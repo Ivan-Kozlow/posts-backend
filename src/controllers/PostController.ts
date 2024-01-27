@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 
-import { RequestWithUserId } from '../types'
 import PostModel from '../models/Post'
+import { RequestWithUserId } from '../../types'
 
 export const getLastTags = async (_req: Request, res: Response) => {
 	try {
